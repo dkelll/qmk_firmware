@@ -47,6 +47,9 @@ endif
 ifeq ($(strip $(KEYBOARD)), planck/rev5)
     BOOTLOADER = qmk-dfu
 endif
+ifeq ($(strip $(KEYBOARD)), planck/rev6)
+    BOOTLOADER = qmk-dfu
+endif
 ifeq ($(strip $(KEYBOARD)), planck/light)
     BOOTLOADER = atmel-dfu
 endif
@@ -78,4 +81,4 @@ SLEEP_LED_ENABLE = no    # Breathing sleep LED during USB suspend
 LAYOUTS = ortho_4x12 planck_mit planck_grid
 LAYOUTS_HAS_RGB = no
 
-DEFAULT_FOLDER = planck/rev5
+DEFAULT_FOLDER = planck/rev6
